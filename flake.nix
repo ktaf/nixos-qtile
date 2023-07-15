@@ -12,7 +12,7 @@ inputs = {
   # used for development
   treefmt-nix = { url = "github:numtide/treefmt-nix"; inputs.nixpkgs.follows = "nixpkgs"; };
   };
-outputs = inputs @ { self, nixpkgs, hyprland, home-manager, treefmt-nix, ... }: 
+outputs = inputs @ { self, nixpkgs, home-manager, treefmt-nix, ... }: 
   let
     user = "kourosh";
     system = "x86_64-linux";

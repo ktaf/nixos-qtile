@@ -35,10 +35,6 @@ services = {
     '';
 
     displayManager.sddm.enable = true;
-    displayManager.sddm.extraConfig = ''
-      sessionstart_cmd    ${pkgs.xorg.sessreg}/bin/sessreg -a -l tty7 %user
-      sessionstop_cmd     ${pkgs.xorg.sessreg}/bin/sessreg -d -l tty7 %user
-    '';
   };
 
   physlock.enable = true;

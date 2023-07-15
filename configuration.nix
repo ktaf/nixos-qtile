@@ -12,7 +12,7 @@
   #fonts
     fonts.fonts = with pkgs; [
       font-awesome
-     (nerdfonts.override { fonts = [ "IntelOneMono" "IBMPlexMono" "Hack" "FiraCode" "JetBrainsMono" ]; })
+     (nerdfonts.override { fonts = [ "IBMPlexMono" "Hack" "FiraCode" "JetBrainsMono" ]; })
      ];
   #emojis
     services.gollum.emoji = true;
